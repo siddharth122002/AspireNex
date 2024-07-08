@@ -13,7 +13,7 @@ function Contact() {
   const [message,setMessage] = useState("");
   const handler=(e)=>{
     e.preventDefault();
-    const res =  axios.post('http://localhost:3000/',{
+    const res =  axios.post('https://portfolio2-backend-psi.vercel.app/',{
       name,
       email,
       message,
