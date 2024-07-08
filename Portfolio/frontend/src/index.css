@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Noto+Sans+JP:wght@100..900&family=Playwrite+AU+TAS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Playwrite+AU+TAS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Kalam:wght@300;400;700&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Playwrite+AU+TAS:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Kalam:wght@300;400;700&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Playwrite+AU+TAS:wght@100..400&family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Kalam:wght@300;400;700&family=Love+Light&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Playwrite+AU+TAS:wght@100..400&family=Tangerine:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes bounce-linear {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-linear {
+  animation: bounce-linear 3s ease-in-out infinite;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", "Arial";
+}
