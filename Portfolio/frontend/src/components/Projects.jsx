@@ -3,6 +3,7 @@ import sci from "../assets/scispot.png";
 import book from "../assets/bookstore.png";
 import crypto from "../assets/crypto.png";
 import social from "../assets/ssss.png";
+import quiz from "../assets/Quizz.png";
 import { UserContext } from "../context/UserContext";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -87,6 +88,15 @@ function Projects() {
                 image={social}
                 description="A web app for sharing photos, featuring functionalities for liking, commenting, and secure user login."
                 link="https://pic-share-frontend-pink.vercel.app/"
+              />
+              </div>
+              <div className="card">
+              <ProjectCard
+                
+                title="QuizMaker"
+                image={quiz}
+                description="Built with the MERN stack that enables users to create, take, and score quizzes. Users can design quizzes, share them, and receive immediate score on their performance."
+                link="https://quiz-frontend-swart.vercel.app/"
               />
               </div>
               
