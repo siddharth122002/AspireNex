@@ -11,6 +11,7 @@ function Home() {
     })
   })
   return (
+    
     <div className='flex justify-center items-center h-[100vh] w-[100%] '>
       <div className=' flex w-full justify-evenly divi'>
         <Link to={'/create'} className='text-5xl hover:-translate-y-6 duration-500 font-bold p-6'>Create Quiz</Link>

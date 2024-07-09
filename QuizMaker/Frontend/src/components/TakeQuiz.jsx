@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Spinner from './Spinner';
 
 function TakeQuiz() {
 
@@ -22,7 +23,7 @@ function TakeQuiz() {
     useEffect(() => {
         const getQuiz = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:3000/quizzes/${id}`);
+                const { data } = await axios.get(`https://quiz-backend-three-beta.vercel.app/quizzes/${id}`);
                 // console.log(data)
                 setQuiz(data);
             } catch (e) {
@@ -103,7 +104,7 @@ function TakeQuiz() {
                     )}
                 </div>
             ) : (
-                <p>Loading...</p>
+                <Spinner/>
             )}
         </div>
     );
