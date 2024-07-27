@@ -10,12 +10,12 @@ function App() {
 
   return (
     <UserContextProvider>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </UserContextProvider>
   );
 }
